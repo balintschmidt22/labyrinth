@@ -78,7 +78,7 @@ public class LabyrinthGUI{
                 ArrayList<HighScore> hScores = new ArrayList<>();
                 try{
                     hScores = gameArea.highScores.getHighScores();
-                }catch(SQLException ex){
+                }catch(Exception ex){
                     Logger.getLogger(LabyrinthGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
                 }
                 Object[][] data = new Object[hScores.size()][4];
