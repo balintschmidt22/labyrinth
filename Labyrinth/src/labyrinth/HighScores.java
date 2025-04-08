@@ -26,9 +26,9 @@ public class HighScores {
     public HighScores(int maxScores) throws SQLException {
         this.maxScores = maxScores;
         Properties connectionProps = new Properties();
-        connectionProps.put("user", "tanulo");
-        connectionProps.put("password", "Asdf.123");
-        connectionProps.put("serverTimezone", "UTC");
+        connectionProps.put("user", "YOUR_USERNAME");
+        connectionProps.put("password", "YOUR_PWD");
+        connectionProps.put("serverTimezone", "UTC+2");
         String dbURL = "jdbc:mysql://localhost:3306/highscores";
         connection = DriverManager.getConnection(dbURL, connectionProps);
         
